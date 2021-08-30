@@ -54,6 +54,7 @@ public class YouTubePlayerController implements
             mYouTubePlayer.setPlayerStateChangeListener(this);
             mYouTubePlayer.setPlaybackEventListener(this);
             mYouTubePlayer.setOnFullscreenListener(this);
+            mYouTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
             updateFullscreen();
             updateShowFullscreenButton();
             updateControls();
